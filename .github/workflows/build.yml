@@ -14,9 +14,11 @@ jobs:
         - name: List Files in Directory
           run: ls
         - name: Check Dotnet Cli
-          run: dotnet
+          run: dotnet build
+        - name: List Files in Directory
+          run: ls TrickingLibrary/ -R
         - name: Check npm 
-          run: npm
+          run: npm -v
 
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       #- name: Hello world
