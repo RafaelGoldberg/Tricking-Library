@@ -1,6 +1,6 @@
 name: Build My Application
 
-on:push
+on: push
 
 jobs:
   build:
